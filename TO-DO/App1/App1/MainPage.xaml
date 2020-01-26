@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1"
+             x:Class="App1.MainPage">
+
+    <StackLayout Padding="10" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                 BackgroundColor="lightblue" 
+                 >
+        <!-- Place new controls here -->
+        <Label Text="Kişisel TO-DO Semih" 
+           x:Name="lbl"
+           HorizontalOptions="Center"
+           FontAttributes="Bold"
+               TextColor="Black"
+            />
+
+
+        <Entry x:Name="_entry" 
+               Placeholder="Başlık Giriniz" 
+               Margin="10"/>
+        <Editor x:Name="_editor" 
+                Placeholder="Notunuzu Giriniz"
+                Margin="10"
+                />
+
+
+        <Label Text="Hatırlatıcı İçin Zaman Giriniz" />
+        
+        <TimePicker x:Name="_TimeP" 
+                    Time="11:00:00"
+                 PropertyChanged="TimePickerPropertyChanged"
+                 />
+        <Label Text="Hatırlatıcıyi Etkinleştir" />
+        <Switch x:Name="_swtch"
+                HorizontalOptions="EndAndExpand"
+                Toggled="OnSwitchToggled"
+                />
+
+
+    </StackLayout>
+    
+    
+
+
+
+    
+    
+</ContentPage>
