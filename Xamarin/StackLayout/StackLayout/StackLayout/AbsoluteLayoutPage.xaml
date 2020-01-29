@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StackLayout.AbsoluteLayoutPage" >
+
+
+    <AbsoluteLayout>
+        <BoxView BackgroundColor="Red" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"></BoxView>
+        <BoxView BackgroundColor="LightBlue" AbsoluteLayout.LayoutBounds="0.5,0.1,100,100" AbsoluteLayout.LayoutFlags="PositionProportional"></BoxView>
+        <Image x:Name="ImcCont" Source="cloudicon.png" AbsoluteLayout.LayoutBounds="0.5,0.1,100,100" AbsoluteLayout.LayoutFlags="PositionProportional" IsVisible="False" />
+        <Button BackgroundColor="DarkGoldenrod" TextColor="White" Text="Show Image"
+                AbsoluteLayout.LayoutBounds="0,1,1,50" AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"
+                Clicked="Button_Clicked"></Button>
+        
+        
+    </AbsoluteLayout>
+    
+    
+</ContentPage>

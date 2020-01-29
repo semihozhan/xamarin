@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StackLayout.RelativeLayout">
+
+    <RelativeLayout>
+        <Button WidthRequest="50" HeightRequest="50"  Text="asd"  BackgroundColor="red"/>
+        <Button WidthRequest="30" HeightRequest="30" Text="zzzzzzz" BackgroundColor="pink"/>
+    </RelativeLayout>
+</ContentPage>

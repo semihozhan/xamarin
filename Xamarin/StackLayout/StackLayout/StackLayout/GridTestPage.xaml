@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StackLayout.GridTestPage">
+    
+    
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" Android="0,0,0,0" iOS="0,20,0,0"></OnPlatform>
+    </ContentPage.Padding>
+    
+    <ContentPage.Content>
+   
+
+    <Grid BackgroundColor="LightBlue" Padding="0" RowSpacing="0" ColumnSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+
+            <Label Text="1. satır 1.kolon"  BackgroundColor="red" Grid.Row="0" Grid.Column="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  />
+            <Label Text="1. satır 2.kolon" BackgroundColor="orange" Grid.Row="0" Grid.Column="1" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+            <Label Text="2. satır 1.kolon" BackgroundColor="Purple" Grid.Row="1" Grid.Column="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+            <Label Text="2. satır 2.kolon" BackgroundColor="DarkGoldenrod" Grid.Row="1" Grid.Column="1" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>

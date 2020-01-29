@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:StackLayout.CarouselFolder"
+             x:Class="StackLayout.Carousel">
+
+    <local:Page1 BackgroundColor="BlueViolet"></local:Page1>
+    <local:Page2 BackgroundColor="Aqua"></local:Page2>
+    <local:Page3 BackgroundColor="Bisque"></local:Page3>
+    
+    
+    
+</CarouselPage>

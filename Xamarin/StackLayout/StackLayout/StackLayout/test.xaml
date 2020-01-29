@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StackLayout.test">
+    
+        <StackLayout>
+            <Button Text="Master Detail deneme" Clicked="Button_Clicked" />
+            <Button Text="Tabbet deneme" Clicked="Button_Clicked2" />
+            <Button Text="Carousel deneme" Clicked="Button_Clicked3" />
+
+          <StackLayout>
+            <Label Text="Denem Yazısı" x:Name="lbl" Opacity="{Binding Source={x:Reference Sld},Path=Value}" />
+            <Entry x:Name="Ent" />
+            <Switch x:Name="swtt" />
+            <Slider x:Name="Sld" Value="1" />
+            <DatePicker x:Name="Dt" />
+            <TimePicker x:Name="Tm" />
+            <Picker x:Name="Pk" SelectedIndexChanged="Pk_SelectedIndexChanged" />
+            <Button x:Name="Btn" Text="Buton" Clicked="Btn_Clicked" />
+        </StackLayout>
+
+
+        </StackLayout>
+    
+</ContentPage>
